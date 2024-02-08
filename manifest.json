@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Paperspace Billing Hide Tool",
+  "version": "1.0",
+  "description": "Paperspaceで有料のマシンを非表示にするよ！",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://console.paperspace.com/*/notebook/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
